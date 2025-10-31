@@ -1,0 +1,22 @@
+﻿{
+  "doctype": "DocType",
+  "name": "MW Material",
+  "module": "Millwork Estimator",
+  "custom": 0,
+  "istable": 0,
+  "autoname": "field:material_name",
+  "fields": [
+    {"fieldname":"material_name","label":"Material Name","fieldtype":"Data","reqd":1,"unique":1},
+    {"fieldname":"category","label":"Category","fieldtype":"Link","options":"MW Material Category","reqd":1},
+    {"fieldname":"unit","label":"Unit","fieldtype":"Link","options":"UOM","reqd":1},
+    {"fieldname":"thickness_in","label":"Thickness (in)","fieldtype":"Float"},
+    {"fieldname":"cost_per_unit","label":"Cost / Unit","fieldtype":"Currency","reqd":1,"default":0},
+    {"fieldname":"sku","label":"SKU","fieldtype":"Data"},
+    {"fieldname":"active","label":"Active","fieldtype":"Check","default":1},
+    {"fieldname":"description","label":"Description","fieldtype":"Small Text"}
+  ],
+  "permissions": [
+    {"role":"System Manager","read":1,"write":1,"create":1,"delete":1},
+    {"role":"All","read":1}
+  ]
+}

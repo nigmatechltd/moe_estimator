@@ -1,0 +1,14 @@
+﻿{
+  "doctype": "DocType",
+  "name": "MW Material Category",
+  "module": "Millwork Estimator",
+  "custom": 0,
+  "istable": 0,
+  "fields": [
+    {"fieldname":"category_name","label":"Category Name","fieldtype":"Data","reqd":1,"unique":1},
+    {"fieldname":"description","label":"Description","fieldtype":"Small Text"}
+  ],
+  "permissions": [
+    {"role":"System Manager","read":1,"write":1,"create":1,"delete":1}
+  ]
+}

@@ -1,0 +1,6 @@
+include MANIFEST.in
+include requirements.txt
+include *.md
+include *.txt
+recursive-include moe_estimator *.py *.json *.js *.css *.html
+recursive-exclude * __pycache__ *.pyc
